@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(pwd "$(dirname "$0")")
+pwd
