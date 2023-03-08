@@ -1,9 +1,2 @@
-#!/bin/bash
-#!/bin/bash
-
-filetype=$(file -b "$1")
-if echo "$filetype" | grep -q "SCHOOL"; then
-  echo "This is a School data file."
-else
-  echo "This is not a School data file."
-fi
+0 string SCHOOL School data
+!:mime School
