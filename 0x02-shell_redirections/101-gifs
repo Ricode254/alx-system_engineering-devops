@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -iname "*.gif" -exec sh -c 'echo "${0##*/}" | tr -d ".gif"' {} \+ | sort -f -n | tr "\n" "\0" | xargs -0 -I {} echo "{}"
+find . -type f -iname "*.gif" -printf '%P\n' | sed 's/\.gif$//' | sort -f -d | tr '\n' '\0' | xargs -0 -I{} echo '{}'
