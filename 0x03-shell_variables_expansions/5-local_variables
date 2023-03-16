@@ -1,2 +1,2 @@
 #!/bin/bash
-declare -p | grep -Eo 'declare (-a|-A|-i)? \w+|\(\)' | sort
+compgen -v -e -A function
