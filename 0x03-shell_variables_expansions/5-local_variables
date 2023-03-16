@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s\n" "${!}" | sort
+declare -p | grep -Eo 'declare (-a|-A|-i)? \w+|\(\)' | sort
